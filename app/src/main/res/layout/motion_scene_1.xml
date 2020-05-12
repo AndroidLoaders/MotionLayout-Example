@@ -1,25 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!-- activity_main.xml -->
 <androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginStart="5dp"
     android:layout_marginEnd="5dp"
-    tools:context=".MotionScene1"
+    app:layoutDescription="@xml/motion_scene_1"
     tools:showPaths="true">
 
     <Button
-        android:id="@+id/textView"
+        android:id="@+id/button"
         style="@style/Widget.MaterialComponents.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
         android:text="Button"
         android:textAllCaps="false"
-        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:textColor="@android:color/background_light" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
