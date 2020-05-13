@@ -2,6 +2,7 @@ package com.example.motionlayout
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.motion_scene_1.*
 
 class MotionScene1 : AppCompatActivity() {
 
