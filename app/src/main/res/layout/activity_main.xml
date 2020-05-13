@@ -30,4 +30,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnMotionScene1" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMotionScene3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/using_custom_attributes"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:textColor="@android:color/background_light"
+        android:translationY="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnMotionScene2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

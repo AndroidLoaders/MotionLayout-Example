@@ -8,4 +8,5 @@
     <string name="text_view">TextView</string>
     <string name="click_button_to_animate">Click on Button to Animate it</string>
     <string name="swipe_view_manually">Swipe view manually to Left/Right</string>
+    <string name="using_custom_attributes">Motion Scene 3\n(Using Custom Attribute)</string>
 </resources>

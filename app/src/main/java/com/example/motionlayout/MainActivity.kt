@@ -14,12 +14,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         btnMotionScene1.setOnClickListener(this)
         btnMotionScene2.setOnClickListener(this)
+        btnMotionScene3.setOnClickListener(this)
     }
 
     override fun onClick(view: View?) {
         when (view?.id) {
             R.id.btnMotionScene1 -> startActivity(MotionScene1::class.java)
             R.id.btnMotionScene2 -> startActivity(MotionScene2::class.java)
+            R.id.btnMotionScene3 -> startActivity(MotionScene3::class.java)
             else -> {
             }
         }
