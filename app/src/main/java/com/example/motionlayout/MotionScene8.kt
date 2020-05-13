@@ -7,6 +7,6 @@ class MotionScene8 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.motion_scene_8)
+        setContentView(R.layout.activity_motion_scene_8)
     }
 }

@@ -2,7 +2,6 @@ package com.example.motionlayout
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.motion_scene_1.*
 
 class MotionScene1 : AppCompatActivity() {
 
@@ -16,6 +15,6 @@ class MotionScene1 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.motion_scene_1)
+        setContentView(R.layout.activity_motion_scene_1)
     }
 }

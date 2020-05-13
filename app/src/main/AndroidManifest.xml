@@ -25,6 +25,7 @@
         <activity android:name=".MotionScene6" />
         <activity android:name=".MotionScene7" />
         <activity android:name=".MotionScene8" />
+        <activity android:name=".MotionScene9" />
 
     </application>
 
