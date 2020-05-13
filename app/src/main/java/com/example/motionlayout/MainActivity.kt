@@ -15,6 +15,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btnMotionScene1.setOnClickListener(this)
         btnMotionScene2.setOnClickListener(this)
         btnMotionScene3.setOnClickListener(this)
+        btnMotionScene4.setOnClickListener(this)
+        btnMotionScene5.setOnClickListener(this)
+        btnMotionScene6.setOnClickListener(this)
+        btnMotionScene7.setOnClickListener(this)
     }
 
     override fun onClick(view: View?) {
@@ -22,6 +26,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnMotionScene1 -> startActivity(MotionScene1::class.java)
             R.id.btnMotionScene2 -> startActivity(MotionScene2::class.java)
             R.id.btnMotionScene3 -> startActivity(MotionScene3::class.java)
+            R.id.btnMotionScene4 -> startActivity(MotionScene4::class.java)
+            R.id.btnMotionScene5 -> startActivity(MotionScene5::class.java)
+            R.id.btnMotionScene6 -> startActivity(MotionScene6::class.java)
+            R.id.btnMotionScene7 -> startActivity(MotionScene7::class.java)
             else -> {
             }
         }

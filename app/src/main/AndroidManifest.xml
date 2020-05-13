@@ -20,6 +20,10 @@
         <activity android:name=".MotionScene1" />
         <activity android:name=".MotionScene2" />
         <activity android:name=".MotionScene3" />
+        <activity android:name=".MotionScene4" />
+        <activity android:name=".MotionScene5" />
+        <activity android:name=".MotionScene6" />
+        <activity android:name=".MotionScene7" />
 
     </application>
 

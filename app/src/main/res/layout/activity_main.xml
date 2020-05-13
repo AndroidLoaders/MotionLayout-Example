@@ -43,4 +43,57 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnMotionScene2" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMotionScene4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/keyframe_animation"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:textColor="@android:color/background_light"
+        android:translationY="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnMotionScene3" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMotionScene5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/keyframe_animation_rotation_x"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:textColor="@android:color/background_light"
+        android:translationY="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnMotionScene4" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMotionScene6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/keyframe_animation_rotation_y"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:textColor="@android:color/background_light"
+        android:translationY="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnMotionScene5" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMotionScene7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/keyframe_animation_rotation"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:textColor="@android:color/background_light"
+        android:translationY="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnMotionScene6" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
