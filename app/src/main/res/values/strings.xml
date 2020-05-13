@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MotionLayout</string>
+
+    <string name="motion_scene_1">Motion Scene 1</string>
+    <string name="motion_scene_2">Motion Scene 2</string>
+
+    <string name="button">Button</string>
+    <string name="text_view">TextView</string>
+    <string name="click_button_to_animate">Click on Button to Animate it</string>
+    <string name="swipe_view_manually">Swipe view manually to Left/Right</string>
 </resources>
