@@ -1,16 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
     <Transition
-        app:constraintSetEnd="@id/end"
-        app:constraintSetStart="@id/start">
+        motion:constraintSetEnd="@id/end"
+        motion:constraintSetStart="@id/start">
         <OnSwipe
-            app:dragDirection="dragUp"
-            app:touchAnchorSide="bottom" />
+            motion:dragDirection="dragUp"
+            motion:touchAnchorId="@id/ivMediator"
+            motion:touchAnchorSide="bottom" />
     </Transition>
 
-    <ConstraintSet android:id="@+id/start"></ConstraintSet>
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/ivBlue"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="15dp"
+            android:alpha="0.0"
+            motion:layout_constraintBottom_toTopOf="@id/textView"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
 
-    <ConstraintSet android:id="@+id/end"></ConstraintSet>
+        <Constraint
+            android:id="@+id/ivRed"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="15dp"
+            android:alpha="0.0"
+            motion:layout_constraintBottom_toTopOf="@id/textView"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+
+        <Constraint
+            android:id="@+id/ivMediator"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="15dp"
+            motion:layout_constraintBottom_toTopOf="@id/textView"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/ivBlue"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="15dp"
+            android:alpha="1.0"
+            motion:layout_constraintEnd_toStartOf="@id/ivMediator"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/ivMediator"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="15dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/ivRed"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="15dp"
+            android:alpha="1.0"
+            motion:layout_constraintStart_toEndOf="@id/ivMediator"
+            motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
 
 </MotionScene>
