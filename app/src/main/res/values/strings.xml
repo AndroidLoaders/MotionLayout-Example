@@ -7,7 +7,8 @@
     <string name="button">Button</string>
     <string name="text_view">TextView</string>
     <string name="click_button_to_animate">Click on Button to Animate it</string>
-    <string name="swipe_view_manually">Swipe view manually to Left/Right</string>
+    <string name="swipe_view_manually_left_right">Swipe view manually to Left/Right</string>
+    <string name="swipe_view_manually_bottom_top">Swipe view manually to Top</string>
     <string name="using_custom_attributes">Animation Using Custom\nAttribute</string>
     <string name="keyframe_animation">Using KeyFrame Animation</string>
     <string name="keyframe_animation_rotation_x">KeyFrame Animation with Rotation\nalong X axis</string>

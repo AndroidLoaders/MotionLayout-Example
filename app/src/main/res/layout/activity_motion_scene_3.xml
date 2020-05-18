@@ -22,7 +22,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/swipe_view_manually"
+        android:text="@string/swipe_view_manually_left_right"
         android:textAllCaps="false"
         android:textSize="15sp"
         android:textStyle="bold"
