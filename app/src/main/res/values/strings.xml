@@ -16,4 +16,5 @@
     <string name="keyframe_animation_rotation">KeyFrame Animation with simple Rotation</string>
     <string name="scale_keyframe_animation">Scale - KeyFrame Animation\ni.e. Change View Size</string>
     <string name="star_animation">Star Animation\n(1 in Bottom to 3 in Top)</string>
+    <string name="curve_animation">Curve Animation\ni.e. app:keyPositionType="deltaRelative"</string>
 </resources>

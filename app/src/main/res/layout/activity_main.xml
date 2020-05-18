@@ -128,6 +128,19 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btnMotionScene8" />
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMotionScene10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/curve_animation"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnMotionScene9" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
