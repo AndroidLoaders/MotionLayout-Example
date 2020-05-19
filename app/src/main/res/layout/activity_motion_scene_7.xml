@@ -5,8 +5,8 @@
     android:layout_height="match_parent"
     android:paddingStart="10dp"
     android:paddingEnd="10dp"
-    app:showPaths="true"
-    app:layoutDescription="@xml/motion_scene_7">
+    app:layoutDescription="@xml/motion_scene_7"
+    app:showPaths="true">
 
     <TextView
         android:id="@+id/tvTextView"
@@ -17,7 +17,10 @@
         android:text="@string/text_view"
         android:textAllCaps="false"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
-        android:textColor="@android:color/background_light" />
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"

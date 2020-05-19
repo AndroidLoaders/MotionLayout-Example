@@ -12,22 +12,36 @@
         android:id="@+id/ivBlue"
         android:layout_width="36dp"
         android:layout_height="36dp"
+        android:layout_marginBottom="15dp"
+        android:alpha="0.0"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/ic_android_blue" />
+        android:src="@drawable/ic_android_blue"
+        app:layout_constraintBottom_toTopOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/ivMediator"
         android:layout_width="36dp"
         android:layout_height="36dp"
+        android:layout_marginBottom="15dp"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/ic_android_mediator" />
+        android:src="@drawable/ic_android_mediator"
+        app:layout_constraintBottom_toTopOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/ivRed"
         android:layout_width="36dp"
         android:layout_height="36dp"
+        android:layout_marginBottom="15dp"
+        android:alpha="0.0"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/ic_android_red" />
+        android:src="@drawable/ic_android_red"
+        app:layout_constraintBottom_toTopOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView"

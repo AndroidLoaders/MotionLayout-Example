@@ -8,7 +8,8 @@
         <OnSwipe
             motion:dragDirection="dragRight"
             motion:touchAnchorId="@id/tvTextView"
-            motion:touchAnchorSide="left" />
+            motion:touchAnchorSide="left"
+            motion:touchRegionId="@id/tvTextView" />
         <KeyFrameSet>
             <KeyPosition
                 motion:framePosition="50"
@@ -29,13 +30,7 @@
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
-        <Constraint
-            android:id="@id/tvTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toTopOf="parent">
+        <Constraint android:id="@id/tvTextView">
             <CustomAttribute
                 motion:attributeName="backgroundColor"
                 motion:customColorValue="@color/colorPrimary" />

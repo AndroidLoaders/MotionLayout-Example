@@ -27,6 +27,7 @@
         <activity android:name=".MotionScene8" />
         <activity android:name=".MotionScene9" />
         <activity android:name=".MotionScene10" />
+        <activity android:name=".LocoMotionActivity" />
 
     </application>
 

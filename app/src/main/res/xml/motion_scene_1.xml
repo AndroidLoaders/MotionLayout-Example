@@ -11,24 +11,21 @@
             motion:targetId="@+id/button" />
     </Transition>
 
-    <ConstraintSet android:id="@+id/start">
-        <Constraint
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toTopOf="parent" />
-    </ConstraintSet>
-
+    <!--
+     For start Constraints it will pick up from hte Layout file but for end state you have to
+     mention all the attributes including layout_width and layout_height otherwise it will
+     consider height/width as 0
+    -->
+    <ConstraintSet android:id="@+id/start" />
     <ConstraintSet android:id="@+id/end">
-        <Constraint
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint android:id="@+id/button">
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent"
+                motion:layout_constraintTop_toTopOf="parent" />
+        </Constraint>
     </ConstraintSet>
 
 </MotionScene>
