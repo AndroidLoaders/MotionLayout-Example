@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_wifi_search.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -12,6 +13,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        btnWifiAnimation.setOnClickListener(this)
         btnMotionScene1.setOnClickListener(this)
         btnMotionScene2.setOnClickListener(this)
         btnMotionScene3.setOnClickListener(this)
@@ -27,6 +29,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(view: View?) {
         when (view?.id) {
+            R.id.btnWifiAnimation -> startActivity(WifiSearchAnimation::class.java)
             R.id.btnMotionScene1 -> startActivity(MotionScene1::class.java)
             R.id.btnMotionScene2 -> startActivity(MotionScene2::class.java)
             R.id.btnMotionScene3 -> startActivity(MotionScene3::class.java)

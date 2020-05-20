@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".WifiSearchAnimation" />
         <activity android:name=".MotionScene1" />
         <activity android:name=".MotionScene2" />
         <activity android:name=".MotionScene3" />
