@@ -11,6 +11,9 @@ class WifiSearchAnimation : AppCompatActivity() {
     /**
      * For more details go through official link :
      * https://developer.android.com/reference/android/graphics/drawable/AnimationDrawable
+     *
+     * Important : You can not start/stop animation-list in onCreate.Operation must be performed
+     * within click listener or ni Runnable
      * */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
