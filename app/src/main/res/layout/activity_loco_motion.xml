@@ -1,56 +1,253 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/loco_motion">
+    android:clipToPadding="false"
+    android:background="@android:color/background_dark"
+    android:scrollbars="none">
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnScene1"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="0dp"
-        android:layout_height="?actionBarSize"
-        android:layout_marginTop="30dp"
-        android:gravity="center_vertical|start"
-        app:layout_constraintEnd_toStartOf="@+id/ivMotionScene1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/ivMotionScene1"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?actionBarItemBackground"
-        android:contentDescription="@string/app_name"
-        android:padding="10dp"
-        android:src="@drawable/ic_arrow_up"
-        app:layout_constraintBottom_toBottomOf="@id/btnScene1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTag="ivMotionScene1"
-        app:layout_constraintTop_toTopOf="@id/btnScene1" />
+        android:paddingBottom="15dp">
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnScene2"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="0dp"
-        android:layout_height="?actionBarSize"
-        android:layout_marginTop="30dp"
-        android:gravity="center_vertical|start"
-        app:layout_constraintEnd_toStartOf="@+id/ivMotionScene2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnScene1" />
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardScene1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="6dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
-        android:id="@+id/ivMotionScene2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="?actionBarItemBackground"
-        android:contentDescription="@string/app_name"
-        android:padding="10dp"
-        android:src="@drawable/ic_arrow_up"
-        app:layout_constraintBottom_toBottomOf="@id/btnScene2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTag="ivMotionScene2"
-        app:layout_constraintTop_toTopOf="@id/btnScene2" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:background="@drawable/primary_background">
 
-</androidx.constraintlayout.motion.widget.MotionLayout>
+                <TextView
+                    android:id="@+id/tvSceneTitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/primary_background"
+                    android:gravity="center_vertical"
+                    android:letterSpacing="0.4"
+                    android:paddingStart="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/motion_scene_1"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivMotionScene1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:contentDescription="@string/app_name"
+                    android:rotation="180"
+                    android:src="@drawable/ic_arrow_up"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="@id/tvSceneTitle1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tvSceneTitle1" />
+
+                <LinearLayout
+                    android:id="@+id/llCardItems1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="10dp"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@id/tvSceneTitle1">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/tvScene1"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/scene1"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/background_light"
+                        app:strokeColor="@android:color/background_light" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/tvScene2"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/scene2"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/background_light"
+                        app:strokeColor="@android:color/background_light" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/tvScene3"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/scene3"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/background_light"
+                        app:strokeColor="@android:color/background_light" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/tvScene4"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/scene4"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/background_light"
+                        app:strokeColor="@android:color/background_light" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/tvScene5"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/scene5"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/background_light"
+                        app:strokeColor="@android:color/background_light" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardScene2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="6dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardScene1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:background="@drawable/primary_background">
+
+                <TextView
+                    android:id="@+id/tvSceneTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/primary_background"
+                    android:gravity="center_vertical"
+                    android:letterSpacing="0.4"
+                    android:paddingStart="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/motion_scene_2"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivMotionScene2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:background="?actionBarItemBackground"
+                    android:contentDescription="@string/app_name"
+                    android:rotation="180"
+                    android:src="@drawable/ic_arrow_up"
+                    app:layout_constraintBottom_toBottomOf="@id/tvSceneTitle2"
+                    app:layout_constraintEnd_toEndOf="@id/tvSceneTitle2"
+                    app:layout_constraintTop_toTopOf="@id/tvSceneTitle2" />
+
+                <LinearLayout
+                    android:id="@+id/llCardItems2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="10dp"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@id/tvSceneTitle2">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/tvScene6"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/scene1"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/background_light"
+                        app:strokeColor="@android:color/background_light" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/tvScene7"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/scene2"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/background_light"
+                        app:strokeColor="@android:color/background_light" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/tvScene8"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/scene3"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/background_light"
+                        app:strokeColor="@android:color/background_light" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/tvScene9"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/scene4"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/background_light"
+                        app:strokeColor="@android:color/background_light" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/tvScene10"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/scene5"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/background_light"
+                        app:strokeColor="@android:color/background_light" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

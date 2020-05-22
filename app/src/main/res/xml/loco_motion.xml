@@ -28,9 +28,9 @@
             <Layout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@id/btnScene1"
+                app:layout_constraintBottom_toBottomOf="@id/tvScene1"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@id/btnScene1" />
+                app:layout_constraintTop_toTopOf="@id/tvScene1" />
             <Transform android:rotation="180" />
         </Constraint>
     </ConstraintSet>
@@ -41,9 +41,9 @@
             android:id="@+id/ivMotionScene2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="@id/btnScene2"
+            app:layout_constraintBottom_toBottomOf="@id/tvScene2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/btnScene2">
+            app:layout_constraintTop_toTopOf="@id/tvScene2">
             <Transform android:rotation="180" />
         </Constraint>
     </ConstraintSet>
