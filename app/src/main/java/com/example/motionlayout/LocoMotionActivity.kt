@@ -2,7 +2,6 @@ package com.example.motionlayout
 
 import android.os.Bundle
 import android.view.View
-import android.view.animation.AccelerateDecelerateInterpolator
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
