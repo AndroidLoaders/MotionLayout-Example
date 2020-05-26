@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:clipToPadding="false"
     android:background="@android:color/background_dark"
+    android:clipToPadding="false"
     android:scrollbars="none">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -62,8 +62,8 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@id/tvSceneTitle1" />
 
-                <LinearLayout
-                    android:id="@+id/llCardItems1"
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/expendableItems1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
@@ -75,56 +75,71 @@
                     app:layout_constraintTop_toBottomOf="@id/tvSceneTitle1">
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/tvScene1"
+                        android:id="@+id/btnScene1"
                         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/scene1"
                         android:textAllCaps="false"
                         android:textColor="@android:color/background_light"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
                         app:strokeColor="@android:color/background_light" />
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/tvScene2"
+                        android:id="@+id/btnScene2"
                         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/scene2"
                         android:textAllCaps="false"
                         android:textColor="@android:color/background_light"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/btnScene1"
                         app:strokeColor="@android:color/background_light" />
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/tvScene3"
+                        android:id="@+id/btnScene3"
                         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/scene3"
                         android:textAllCaps="false"
                         android:textColor="@android:color/background_light"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/btnScene2"
                         app:strokeColor="@android:color/background_light" />
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/tvScene4"
+                        android:id="@+id/btnScene4"
                         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/scene4"
                         android:textAllCaps="false"
                         android:textColor="@android:color/background_light"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/btnScene3"
                         app:strokeColor="@android:color/background_light" />
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/tvScene5"
+                        android:id="@+id/btnScene5"
                         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/scene5"
                         android:textAllCaps="false"
                         android:textColor="@android:color/background_light"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/btnScene4"
                         app:strokeColor="@android:color/background_light" />
 
-                </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -180,8 +195,8 @@
                     app:layout_constraintEnd_toEndOf="@id/tvSceneTitle2"
                     app:layout_constraintTop_toTopOf="@id/tvSceneTitle2" />
 
-                <LinearLayout
-                    android:id="@+id/llCardItems2"
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/expendableItems2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
@@ -193,56 +208,71 @@
                     app:layout_constraintTop_toBottomOf="@id/tvSceneTitle2">
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/tvScene6"
+                        android:id="@+id/btnScene6"
                         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/scene1"
+                        android:text="@string/scene6"
                         android:textAllCaps="false"
                         android:textColor="@android:color/background_light"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
                         app:strokeColor="@android:color/background_light" />
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/tvScene7"
+                        android:id="@+id/btnScene7"
                         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/scene2"
+                        android:text="@string/scene7"
                         android:textAllCaps="false"
                         android:textColor="@android:color/background_light"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/btnScene6"
                         app:strokeColor="@android:color/background_light" />
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/tvScene8"
+                        android:id="@+id/btnScene8"
                         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/scene3"
+                        android:text="@string/scene8"
                         android:textAllCaps="false"
                         android:textColor="@android:color/background_light"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/btnScene7"
                         app:strokeColor="@android:color/background_light" />
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/tvScene9"
+                        android:id="@+id/btnScene9"
                         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/scene4"
+                        android:text="@string/scene9"
                         android:textAllCaps="false"
                         android:textColor="@android:color/background_light"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/btnScene8"
                         app:strokeColor="@android:color/background_light" />
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/tvScene10"
+                        android:id="@+id/btnScene10"
                         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/scene5"
+                        android:text="@string/scene10"
                         android:textAllCaps="false"
                         android:textColor="@android:color/background_light"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/btnScene9"
                         app:strokeColor="@android:color/background_light" />
 
-                </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -11,6 +11,11 @@
     <string name="scene3">Scene 3</string>
     <string name="scene4">Scene 4</string>
     <string name="scene5">Scene 5</string>
+    <string name="scene6">Scene 6</string>
+    <string name="scene7">Scene 7</string>
+    <string name="scene8">Scene 8</string>
+    <string name="scene9">Scene 9</string>
+    <string name="scene10">Scene 10</string>
     <string name="wifi_search">Wifi Search Animation</string>
     <string name="start_animation">Start Animation</string>
     <string name="stop_animation">Stop Animation</string>
