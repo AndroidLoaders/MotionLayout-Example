@@ -68,6 +68,7 @@ class LocoMotionActivity : AppCompatActivity(), View.OnClickListener {
                 else animateLayoutItems(ivMotionScene2, cardScene2, expendableItems2)
             }
             R.id.btnScene1 -> startNewActivity(Scene1Activity::class.java)
+            R.id.btnScene2 -> startNewActivity(Scene2Activity::class.java)
         }
     }
 
