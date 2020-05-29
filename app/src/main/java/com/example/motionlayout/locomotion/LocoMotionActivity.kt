@@ -1,14 +1,16 @@
-package com.example.motionlayout
+package com.example.motionlayout.locomotion
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.view.MenuItem
 import android.view.View
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.transition.AutoTransition
 import androidx.transition.TransitionManager
+import com.example.motionlayout.R
 import com.google.android.material.card.MaterialCardView
 import kotlinx.android.synthetic.main.activity_loco_motion.*
 
@@ -20,7 +22,16 @@ class LocoMotionActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_loco_motion)
 
+        supportActionBar?.run {
+            this.setDisplayHomeAsUpEnabled(true)
+        }
+
         initViews()
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) finish()
+        return super.onOptionsItemSelected(item)
     }
 
     private fun initViews() {
@@ -67,8 +78,10 @@ class LocoMotionActivity : AppCompatActivity(), View.OnClickListener {
                     }, 800)
                 else animateLayoutItems(ivMotionScene2, cardScene2, expendableItems2)
             }
-            R.id.btnScene1 -> startNewActivity(Scene1Activity::class.java)
-            R.id.btnScene2 -> startNewActivity(Scene2Activity::class.java)
+            R.id.btnScene1 -> startNewActivity(
+                Scene1Activity::class.java)
+            R.id.btnScene2 -> startNewActivity(
+                Scene2Activity::class.java)
         }
     }
 
