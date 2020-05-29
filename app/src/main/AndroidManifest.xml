@@ -31,6 +31,8 @@
         <activity android:name=".locomotion.LocoMotionActivity" />
         <activity android:name=".locomotion.Scene1Activity" />
         <activity android:name=".locomotion.Scene2Activity" />
+        <activity android:name=".locomotion.Scene3Activity" />
+        <activity android:name=".locomotion.Scene4Activity" />
 
     </application>
 
