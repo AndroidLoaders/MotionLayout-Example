@@ -13,6 +13,10 @@
         <KeyFrameSet>
             <KeyAttribute
                 android:alpha="0"
+                app:framePosition="70"
+                app:motionTarget="@id/tvTitle" />
+            <KeyAttribute
+                android:alpha="0"
                 app:framePosition="95"
                 app:motionTarget="@id/tvDescription" />
         </KeyFrameSet>
