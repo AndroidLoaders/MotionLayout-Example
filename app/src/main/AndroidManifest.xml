@@ -28,11 +28,16 @@
         <activity android:name=".MotionScene8" />
         <activity android:name=".MotionScene9" />
         <activity android:name=".MotionScene10" />
+
         <activity android:name=".locomotion.LocoMotionActivity" />
-        <activity android:name=".locomotion.Scene1Activity" />
-        <activity android:name=".locomotion.Scene2Activity" />
-        <activity android:name=".locomotion.Scene3Activity" />
-        <activity android:name=".locomotion.Scene4Activity" />
+
+        <activity android:name=".locomotion.motionscene1.Scene1Activity" />
+        <activity android:name=".locomotion.motionscene1.Scene2Activity" />
+        <activity android:name=".locomotion.motionscene1.Scene3Activity" />
+        <activity android:name=".locomotion.motionscene1.Scene4Activity" />
+        <activity android:name=".locomotion.motionscene1.Scene5Activity" />
+
+        <activity android:name=".locomotion.motionscene2.Scene6Activity" />
 
     </application>
 

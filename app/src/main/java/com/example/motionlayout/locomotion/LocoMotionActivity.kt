@@ -11,6 +11,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.transition.AutoTransition
 import androidx.transition.TransitionManager
 import com.example.motionlayout.R
+import com.example.motionlayout.locomotion.motionscene1.*
 import com.google.android.material.card.MaterialCardView
 import kotlinx.android.synthetic.main.activity_loco_motion.*
 
@@ -82,6 +83,7 @@ class LocoMotionActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnScene2 -> startNewActivity(Scene2Activity::class.java)
             R.id.btnScene3 -> startNewActivity(Scene3Activity::class.java)
             R.id.btnScene4 -> startNewActivity(Scene4Activity::class.java)
+            R.id.btnScene5 -> startNewActivity(Scene5Activity::class.java)
         }
     }
 

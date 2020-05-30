@@ -1,4 +1,4 @@
-package com.example.motionlayout.locomotion
+package com.example.motionlayout.locomotion.motionscene1
 
 import android.os.Bundle
 import android.view.MenuItem
@@ -6,16 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.motionlayout.R
 import com.example.motionlayout.extentions.setLightStatusBar
 
-class Scene2Activity : AppCompatActivity() {
-
-    /**
-     * Here android:elevation="6dp" in imageview plays much important role
-     * To notice what role it plays run app by removing and adding it
-     */
+class Scene1Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_scene_2)
+        setContentView(R.layout.activity_scene_1)
 
         supportActionBar?.run {
             this.setDisplayHomeAsUpEnabled(true)

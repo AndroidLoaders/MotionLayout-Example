@@ -1,4 +1,4 @@
-package com.example.motionlayout.locomotion
+package com.example.motionlayout.locomotion.motionscene1
 
 import android.os.Bundle
 import android.view.MenuItem
@@ -6,11 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.motionlayout.R
 import com.example.motionlayout.extentions.setLightStatusBar
 
-class Scene3Activity : AppCompatActivity() {
+class Scene5Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_scene_3)
+        setContentView(R.layout.activity_scene_5)
 
         supportActionBar?.run {
             this.setDisplayHomeAsUpEnabled(true)
