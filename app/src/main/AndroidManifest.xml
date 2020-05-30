@@ -38,6 +38,9 @@
         <activity android:name=".locomotion.motionscene1.Scene5Activity" />
 
         <activity android:name=".locomotion.motionscene2.Scene6Activity" />
+        <activity
+            android:name=".locomotion.motionscene2.Scene7Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
 
     </application>
 

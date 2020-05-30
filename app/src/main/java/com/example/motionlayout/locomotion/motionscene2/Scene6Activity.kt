@@ -37,6 +37,8 @@ class Scene6Activity : AppCompatActivity() {
         val topStartReverseAnimator =
             AnimatedVectorDrawableCompat.create(this, R.drawable.top_start_liquid_reverse)
 
+        ivTopStartLiquid.setImageDrawable(topStartForwardAnimator)
+
         topStartForwardAnimator?.run {
             this.registerAnimationCallback(object : Animatable2Compat.AnimationCallback() {
                 override fun onAnimationEnd(drawable: Drawable?) {
@@ -63,6 +65,8 @@ class Scene6Activity : AppCompatActivity() {
             AnimatedVectorDrawableCompat.create(this, R.drawable.bottom_end_liquid_forward)
         val bottomEndReverseAnimator =
             AnimatedVectorDrawableCompat.create(this, R.drawable.bottom_end_liquid_reverse)
+
+        ivBottomEndLiquid.setImageDrawable(bottomEndForwardAnimator)
 
         bottomEndForwardAnimator?.run {
             this.registerAnimationCallback(object : Animatable2Compat.AnimationCallback() {
