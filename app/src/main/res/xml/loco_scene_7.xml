@@ -75,7 +75,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.3" />
             <CustomAttribute
-                app:attributeName="backgroundColor"
+                app:attributeName="cardBackgroundColor"
                 app:customColorValue="@color/colorPrimaryDark" />
             <CustomAttribute
                 app:attributeName="radius"
@@ -95,27 +95,23 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
             <CustomAttribute
+                app:attributeName="cardBackgroundColor"
+                app:customColorValue="@color/colorAccent" />
+            <CustomAttribute
                 app:attributeName="radius"
                 app:customDimension="0dp" />
-            <CustomAttribute
-                app:attributeName="padding"
-                app:customDimension="0dp" />
-            <CustomAttribute
-                app:attributeName="backgroundColor"
-                app:customColorValue="@color/colorAccent" />
         </Constraint>
 
         <Constraint android:id="@id/ivBookCover">
             <Layout
                 android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="36dp"
-                android:layout_marginTop="120dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="24dp"
                 app:layout_constraintBottom_toBottomOf="@id/cardBookDetails"
                 app:layout_constraintStart_toStartOf="parent" />
             <Transform
                 android:rotationX="0"
-                android:translationY="66dp" />
+                android:translationY="100dp" />
         </Constraint>
     </ConstraintSet>
 
