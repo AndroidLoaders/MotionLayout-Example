@@ -4,12 +4,13 @@
 
     <Transition
         app:constraintSetEnd="@id/middle"
-        app:constraintSetStart="@id/start">
+        app:constraintSetStart="@id/start"
+        app:duration="250">
         <OnSwipe
             app:dragDirection="dragDown"
-            app:touchAnchorId="@id/cardBookCover"
+            app:touchAnchorId="@id/ivBookCover"
             app:touchAnchorSide="middle"
-            app:touchRegionId="@id/cardBookCover" />
+            app:touchRegionId="@id/ivBookCover" />
     </Transition>
 
     <Transition
@@ -22,7 +23,7 @@
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
-        <Constraint android:id="@id/cardBookCover">
+        <Constraint android:id="@id/ivBookCover">
             <Layout
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
@@ -31,9 +32,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.3" />
-            <CustomAttribute
-                app:attributeName="radius"
-                app:customDimension="7dp" />
             <CustomAttribute
                 app:attributeName="outlineSpotShadowColor"
                 app:customColorValue="@android:color/transparent" />
@@ -51,16 +49,13 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.3" />
-            <CustomAttribute
-                app:attributeName="outlineSpotShadowColor"
-                app:customColorValue="@android:color/transparent" />
             <Transform android:rotationX="-55" />
             <PropertySet android:alpha="0" />
         </Constraint>
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/middle">
-        <Constraint android:id="@id/cardBookCover">
+        <Constraint android:id="@id/ivBookCover">
             <Layout
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
@@ -69,9 +64,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/cardBookDetails"
                 app:layout_constraintVertical_bias="0.3" />
-            <CustomAttribute
-                app:attributeName="radius"
-                app:customDimension="0dp" />
             <CustomAttribute
                 app:attributeName="outlineSpotShadowColor"
                 app:customColorValue="@android:color/transparent" />
@@ -90,14 +82,12 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.3" />
             <CustomAttribute
-                app:attributeName="outlineSpotShadowColor"
-                app:customColorValue="@android:color/transparent" />
-            <CustomAttribute
                 app:attributeName="cardBackgroundColor"
                 app:customColorValue="@color/colorPrimaryDark" />
             <CustomAttribute
                 app:attributeName="radius"
                 app:customDimension="10dp" />
+            <Transform android:elevation="6dp" />
             <PropertySet android:alpha="1" />
         </Constraint>
     </ConstraintSet>
@@ -112,9 +102,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
             <CustomAttribute
-                app:attributeName="outlineSpotShadowColor"
-                app:customColorValue="@android:color/transparent" />
-            <CustomAttribute
                 app:attributeName="cardBackgroundColor"
                 app:customColorValue="@color/colorAccent" />
             <CustomAttribute
@@ -122,24 +109,19 @@
                 app:customDimension="0dp" />
         </Constraint>
 
-        <Constraint android:id="@id/cardBookCover">
+        <Constraint android:id="@id/ivBookCover">
             <Layout
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginStart="18dp"
+                android:layout_width="150dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="24dp"
                 app:layout_constraintBottom_toBottomOf="@id/cardBookDetails"
-                app:layout_constraintHeight_percent="0.30"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintWidth_percent="0.349" />
-            <CustomAttribute
-                app:attributeName="radius"
-                app:customDimension="10dp" />
+                app:layout_constraintStart_toStartOf="parent" />
             <CustomAttribute
                 app:attributeName="outlineSpotShadowColor"
                 app:customColorValue="@android:color/transparent" />
             <Transform
                 android:rotationX="0"
-                android:translationY="36dp" />
+                android:translationY="100dp" />
         </Constraint>
     </ConstraintSet>
 

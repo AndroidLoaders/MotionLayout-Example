@@ -41,6 +41,9 @@
         <activity
             android:name=".locomotion.motionscene2.Scene7Activity"
             android:theme="@style/AppTheme.NoActionBar.TransparentStatusBar" />
+        <activity
+            android:name=".locomotion.motionscene2.Scene8Activity"
+            android:theme="@style/AppTheme.NoActionBar.TransparentStatusBar" />
 
     </application>
 
